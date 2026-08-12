@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClearFault Auto Diagnostics | We Find the Fault. We Clear the Code.</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#0B0F19',
+                        brandSurface: '#161B26',
+                        brandCyan: '#00F0FF',
+                        brandAmber: '#FFAB00',
+                    },
+                    fontFamily: {
+                        heading: ['Orbitron', 'sans-serif'],
+                        body: ['Rajdhani', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .cyan-glow {
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.35);
+        }
+        .cyan-glow-hover:hover {
+            box-shadow: 0 0 25px rgba(0, 240, 255, 0.6);
+        }
+        .border-glow {
+            border: 1px solid rgba(0, 240, 255, 0.2);
+        }
+        .border-glow:hover {
+            border-color: #00F0FF;
+        }
+    </style>
+</head>
+<body class="bg-brandDark text-gray-200 font-body text-lg antialiased selection:bg-brandCyan selection:text-black">
+
+    <!-- Top Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-brandDark/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2">
+                <i class="fa-solid fa-microchip text-brandCyan text-2xl"></i>
+                <span class="font-heading font-extrabold text-xl sm:text-2xl text-white tracking-wider">
+                    CLEAR<span class="text-brandCyan">FAULT</span>
+                </span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide uppercase">
+                <a href="#diagnostics" class="hover:text-brandCyan transition-colors">Diagnostics</a>
+                <a href="#repairs" class="hover:text-brandCyan transition-colors">Car Repairs</a>
+                <a href="#process" class="hover:text-brandCyan transition-colors">Our Process</a>
+                <a href="#contact" class="hover:text-brandCyan transition-colors">Contact</a>
+            </nav>
+
+            <!-- Quick Action Buttons -->
+            <div class="flex items-center gap-3">
+                <a href="tel:+27692543550" class="hidden lg:flex items-center gap-2 text-sm font-bold bg-gray-800 hover:bg-gray-700 px-4 py-2.5 rounded-lg border border-gray-700 transition">
+                    <i class="fa-solid fa-phone text-brandCyan"></i>
+                    <span>+27 69 254 3550</span>
+                </a>
+                <a href="#contact" class="bg-brandCyan text-black font-heading font-extrabold text-sm px-5 py-2.5 rounded-lg cyan-glow cyan-glow-hover transition transform active:scale-95">
+                    Book Scan
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brandCyan/10 via-transparent to-transparent pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brandCyan/10 border border-brandCyan/30 text-brandCyan text-sm font-bold mb-6">
+                    <i class="fa-solid fa-circle-dot animate-pulse"></i> Specialized Vehicle Diagnostic Clinic
+                </div>
+                
+                <h1 class="font-heading text-4xl sm:text-6xl font-extrabold text-white leading-tight mb-6">
+                    We Find the Fault.<br>
+                    <span class="text-brandCyan">We Clear the Code.</span>
+                </h1>
+                
+                <p class="text-gray-300 text-xl mb-8 leading-relaxed">
+                    Advanced computerized scanning, precision electrical troubleshooting, and complete mechanical fixes for all cars. Stop guessing—get an accurate diagnosis today.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                    <a href="https://wa.me/27783483762?text=Hello%20ClearFault%20Auto%20Diagnostics,%20I%20would%20like%20to%20book%20a%20diagnostic%20scan%20for%20my%20car." target="_blank" class="flex items-center justify-center gap-3 bg-brandCyan text-black font-heading font-bold text-lg px-8 py-4 rounded-xl cyan-glow cyan-glow-hover transition transform active:scale-95">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        Book a Diagnostic Scan
+                    </a>
+                    <a href="tel:+27692543550" class="flex items-center justify-center gap-3 bg-brandSurface hover:bg-gray-800 text-white font-heading font-semibold text-lg px-8 py-4 rounded-xl border border-gray-700 transition">
+                        <i class="fa-solid fa-phone text-brandCyan"></i>
+                        Call +27 69 254 3550
+                    </a>
+                </div>
+
+                <!-- Feature Badges -->
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 pt-6 border-t border-gray-800">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-shield-halved text-brandCyan text-xl"></i>
+                        <span class="text-sm font-semibold text-gray-300">Exact Root Cause Pinpointing</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-gauge-high text-brandCyan text-xl"></i>
+                        <span class="text-sm font-semibold text-gray-300">Full System Computer Scans</span>
+                    </div>
+                    <div class="flex items-center gap-3 col-span-2 md:col-span-1">
+                        <i class="fa-solid fa-wrench text-brandCyan text-xl"></i>
+                        <span class="text-sm font-semibold text-gray-300">Complete Car Fixing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diagnostics Services Section (Primary Focus) -->
+    <section id="diagnostics" class="py-20 bg-brandSurface relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mb-4">
+                    Car <span class="text-brandCyan">Diagnosis Services</span>
+                </h2>
+                <p class="text-gray-400">
+                    Equipped with diagnostic technology to analyze every module, sensor, and mechanical component in your car.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-brandDark p-8 rounded-2xl border-glow transition">
+                    <div class="w-14 h-14 rounded-xl bg-brandCyan/10 flex items-center justify-center text-brandCyan text-2xl mb-6">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">ECU & Computer Diagnostics</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Full OBD-II computerized fault scanning, live sensor telemetry monitoring, engine control unit checks, and diagnostic trouble code (DTC) clearing.
+                    </p>
+                    <span class="text-xs text-brandAmber font-semibold flex items-center gap-2">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Ideal for Check Engine Lights
+                    </span>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-brandDark p-8 rounded-2xl border-glow transition">
+                    <div class="w-14 h-14 rounded-xl bg-brandCyan/10 flex items-center justify-center text-brandCyan text-2xl mb-6">
+                        <i class="fa-solid fa-car-side"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Suspension & Steering Diagnostics</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Thorough inspection of shock absorbers, struts, ball joints, sway bar links, control arms, and power steering rack health.
+                    </p>
+                    <span class="text-xs text-brandAmber font-semibold flex items-center gap-2">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Fixes Clunks, Bumps & Pulling
+                    </span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-brandDark p-8 rounded-2xl border-glow transition">
+                    <div class="w-14 h-14 rounded-xl bg-brandCyan/10 flex items-center justify-center text-brandCyan text-2xl mb-6">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Electrical & Battery Tracing</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Advanced short-circuit detection, parasitic battery drain tracing, alternator charging output analysis, and starter motor draw tests.
+                    </p>
+                    <span class="text-xs text-brandAmber font-semibold flex items-center gap-2">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Fixes Dead Batteries & Flickering
+                    </span>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-brandDark p-8 rounded-2xl border-glow transition">
+                    <div class="w-14 h-14 rounded-xl bg-brandCyan/10 flex items-center justify-center text-brandCyan text-2xl mb-6">
+                        <i class="fa-solid fa-engine"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Engine Mechanical Diagnostics</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Cylinder compression testing, fuel pressure & injector analysis, ignition coil testing, and cooling system pressure diagnostics.
+                    </p>
+                    <span class="text-xs text-brandAmber font-semibold flex items-center gap-2">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Resolves Misfires & Overheating
+                    </span>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-brandDark p-8 rounded-2xl border-glow transition">
+                    <div class="w-14 h-14 rounded-xl bg-brandCyan/10 flex items-center justify-center text-brandCyan text-2xl mb-6">
+                        <i class="fa-solid fa-circle-stop"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Brake & ABS System Diagnostics</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        ABS module electronic error reading, wheel speed sensor verification, hydraulic brake line pressure checks, and rotor/pad inspection.
+                    </p>
+                    <span class="text-xs text-brandAmber font-semibold flex items-center gap-2">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Resolves ABS Lights & Spongy Pedals
+                    </span>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-brandDark p-8 rounded-2xl border-glow transition">
+                    <div class="w-14 h-14 rounded-xl bg-brandCyan/10 flex items-center justify-center text-brandCyan text-2xl mb-6">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Transmission & Gearbox Checks</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Automatic and manual gearbox electronics scanning, clutch slippage evaluation, gear shift delay analysis, and drive axle inspections.
+                    </p>
+                    <span class="text-xs text-brandAmber font-semibold flex items-center gap-2">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Fixes Slipping Gears & Shifting Delays
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Fixing & Repairs Section -->
+    <section id="repairs" class="py-20 bg-brandDark border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brandCyan/10 text-brandCyan text-sm font-bold mb-4">
+                        <i class="fa-solid fa-wrench"></i> Full Repair Solutions
+                    </div>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mb-6">
+                        We Don't Just Diagnose.<br>
+                        <span class="text-brandCyan">We Fix Your Car Right.</span>
+                    </h2>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Once we locate the exact fault in your car, our mechanical team performs complete, high-quality fixes. No extra parts you don't need—just direct, permanent solutions.
+                    </p>
+
+                    <ul class="space-y-4 text-gray-300 mb-8">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-brandCyan mt-1"></i>
+                            <span><strong>Suspension Repairs:</strong> Shock, strut, bushing, and ball joint replacements.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-brandCyan mt-1"></i>
+                            <span><strong>Engine & Component Fixes:</strong> Ignition, cooling, fuel pump, and belt replacements.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-brandCyan mt-1"></i>
+                            <span><strong>Brake Servicing:</strong> Pad, rotor, caliper, and ABS sensor fixes.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-brandCyan mt-1"></i>
+                            <span><strong>Electrical Repairs:</strong> Wiring repairs, alternator, starter, and sensor replacements.</span>
+                        </li>
+                    </ul>
+
+                    <a href="https://wa.me/27783483762?text=Hi,%20I%20need%20a%20repair%20quote%20for%20my%20car." target="_blank" class="inline-flex items-center gap-3 bg-brandCyan text-black font-heading font-bold px-6 py-3.5 rounded-xl cyan-glow cyan-glow-hover transition">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        Get a Repair Quote
+                    </a>
+                </div>
+
+                <!-- Highlight Card -->
+                <div class="bg-brandSurface p-8 rounded-2xl border border-gray-800">
+                    <h3 class="font-heading text-2xl font-bold text-white mb-6">The ClearFault Guarantee</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-brandCyan/10 text-brandCyan flex items-center justify-center shrink-0 font-bold">1</div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Transparent Diagnosis First</h4>
+                                <p class="text-sm text-gray-400">We test and trace before replacing any parts on your car.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-brandCyan/10 text-brandCyan flex items-center justify-center shrink-0 font-bold">2</div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Clear Explanations</h4>
+                                <p class="text-sm text-gray-400">We explain the fault in plain language with zero mechanical confusion.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-brandCyan/10 text-brandCyan flex items-center justify-center shrink-0 font-bold">3</div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Fault Cleared Guarantee</h4>
+                                <p class="text-sm text-gray-400">We verify the fix with a final diagnostic scan to ensure the error code stays gone.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="py-20 bg-brandSurface border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mb-4">
+                    Book Your <span class="text-brandCyan">Diagnostic Scan</span>
+                </h2>
+                <p class="text-gray-400">
+                    Reach out directly via Call, WhatsApp, or Email to schedule your car's inspection.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
+                
+                <!-- Phone Card -->
+                <a href="tel:+27692543550" class="bg-brandDark p-8 rounded-2xl border-glow text-center transition group">
+                    <div class="w-16 h-16 rounded-full bg-brandCyan/10 text-brandCyan text-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-white text-lg mb-2">Direct Phone Call</h3>
+                    <p class="text-brandCyan font-bold text-xl mb-1">+27 69 254 3550</p>
+                    <p class="text-gray-400 text-sm">Click to call immediately</p>
+                </a>
+
+                <!-- WhatsApp Card -->
+                <a href="https://wa.me/27783483762?text=Hello%20ClearFault%20Auto%20Diagnostics,%20I%20want%20to%20book%20a%20diagnostic%20scan." target="_blank" class="bg-brandDark
